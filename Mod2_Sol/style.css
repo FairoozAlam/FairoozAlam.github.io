@@ -1,91 +1,307 @@
-{
-  box-sizing: border-box;
-}
 body{
-background-color:rgb(51,232,255);
-}
-
-
-h1 {
-	font-size: 27px;
-	font-family: Georgia serif;
+	font-size: 30 px;
+	color: #5B073B;
+	background-color: #D0C5E5;
+	font-family: 'Rancho', cursive;
 	text-align: center;
-	color: rgb(0, 0, 0);
-	margin-bottom: 30px;
-        
 }
-
-p {
-	padding: 15px 5px 0px 5px;
-	font-family: Georgia sans-serif;
-	font-size: 16px;
-	position: relative;
+/*header*/
+#header-nav {
+	background-color: #1D0548;
+	border-radius: 0;
+	border:0;
 }
-
-.section { 
-	background-color: rgb(150, 150, 150);
-   	border: 2px solid black;
-   	margin-top: 20px; 
-   	margin-right: 20px; 
-   	padding: 3px;
-   	text-align: justify;
-   	position: relative;
- }
-
-span {
-	font-size: 20px;
-	width: 150px;
-	border: 1px solid black;
+#logo-img{
+	background: url("../Mod2_Sol/dud.png") no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 10px 15px 10px 0;
+}
+/*bmbdu*/
+.navbar-brand{ 
+	padding-top:8px; 
+}
+/*bmb*/
+.navbar-brand h1{
+	color:#07C58F;
+	font-size: 2.5em;
 	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	line-height: .75;
+}
+/*bmbdu*/
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration:none;
+	color: #0C8047;
+}
+/*du*/
+.navbar-brand p {
+	color:#48B4D2;
+	font-size: 2em;
+	margin-top: 12px;
+	float: left;
+}
+
+#nav-list{
+	margin-top: 10px;
+}
+/*icon plus letter*/
+#nav-list a {
+	color:#E8E4B9;
 	text-align: center;
-float: right; top :0; right: 0; margin: 0;
-	position: absolute;
 }
-#pp1 {
-	background-color: rgb(250, 150, 150);
-	color: rgb(0, 0, 0);
+#nav-list a:hover{
+	background: #6C6D6A;
 }
-#pp2 {
-	background-color: rgb(250, 0, 0);
-	color: rgb(250, 250, 250);
+/*icon only*/
+#nav-list a span{
+	font-size: 1.8em; 
 }
-#pp3 {
-	background-color: rgb(200, 200, 100);
-	color: rgb(0, 0, 0);
+#email {
+	margin-top: 5px;
+}
+#email a{
+	text-align: right;
+	padding-bottom: 0;
+}
+/*header toggle*/
+.navbar-header button.navbar-toggle,.navbar-header .icon-bar{
+	border:1px solid #0D6D6B;
+}
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top:-30px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+	#logo-img{
+		background: url("../Mod2_Sol/ss.png") no-repeat;
+		width:50px;
+		height:50px;
+		margin: 20px 5px 5px 0;
+
+	}
+	.jumbotron{
+		background: url("../Mod2_Sol/900.png") no-repeat;
+		height: 558px;
+		box-shadow: 0 0 50px #E9B3D7;
+		border: 2px solid #8E0864;
+
+	}
+	.navbar-brand h1{
+	font-size: 2em;
+	margin-top: 10px;
+    }
+    .navbar-brand p {
+	font-size: 1.8em;
+	float: left;
+	margin-top: 5px;
+    }
+}
+@media (max-width: 767px){
+	.navbar-brand {
+		padding-top:5px;
+		height:80px;
+	}
+	.navbar-brand h1{
+		padding-top: 4px;
+		font-size: 5.5vw;
+	}
+	.navbar-brand p {
+		font-size: 1em;
+		font-weight: bold; 
+		margin-top: 3px;
+	}
+	.navbar-brand p img {
+		height: 20px;
+	}
+
+#collapsable-nav a {
+	font-size: 1.5em;
+}
+#collapsable-nav a span{
+	font-size: 1.2em;
+	margin-right: 5px;
+}
+.container .jumbotron{
+	margin-top:30px;
+	padding:0;
+	box-shadow: 0 0 50px #E9B3D7;
+	border: 2px solid #8E0864;
 }
 }
 
-.row {
-	width: 100%;
+#mail-btn a {
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 10px;
+	padding-top: 5px;
+	display: block;
+	border: 2px solid #fff;
+	background-color: #f6b319;
+	color:#951c49;
+	display:block;
 }
 
-/*  PC view */
 
-@media (min-width: 992px) {
- 
-  .col-lg-4 {
-    width: 33.33%;
-    float: left;
+@media (min-width: 1200px) {
+	.jumbotron{
+		background: url("../Mod2_Sol/1200.png") no-repeat;
+		height: 675px;
+		box-shadow: 0 0 50px #E9B3D7;
+		border: 2px solid #8E0864;
 	}
 }
+@media (min-width: 768px) and (max-width: 991px){
+	.jumbotron{
+		background: url("../Mod2_Sol/700.png") no-repeat;
+		height: 432px;
+		box-shadow: 0 0 50px #E9B3D7;
+		border: 2px solid #8E0864;
 
-/* Tablet view */
-@media (min-width: 768px) and (max-width: 991px) {
- 
-  .col-md-6 {
-    width: 50%;
-    float: left;
+}
+}
+/*main content*/
+#cr-tile, #mail-tile,#map-tile {
+	height:250px;
+	width:100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #05A5AD;
+	overflow: hidden;
+}
+#cr-tile:hover, #mail-tile:hover,#map-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+	border: 2px solid #D6EF50;
+}
+#cr-tile{
+	background: url("../Mod2_Sol/cr.png") no-repeat;
+	background-position: center;
+}
+#mail-tile{
+	background: url("../Mod2_Sol/music.png") no-repeat;
+	background-position: center;
+}
+
+
+#cr-tile span,#mail-tile span,#map-tile span{
+ position:absolute;
+ bottom:0;
+ right:0;
+ width:100%;
+ text-align:center;
+ font-size:1.6em;
+ text-transform:uppercase;
+ background-color:#671A5E;
+ color:#9DF8A7;
+ opacity: .8;
+}
+@media (max-width: 479px) {
+	#cr-tile, #mail-tile, #map-tile {
+      width: 250px;
+      margin:0 auto 15px;
   }
-  .col-md-12 {
-    width: 100%;
-    float: left;
+  .navbar-brand h1 {
+  	padding-top: 5px;
+  	font-size:6vw;
+  }
+  .panel-footer section {
+  	margin-bottom: 30px;
+  }
+  .panel-footer section hr{
+  	width:50%;
   }
 }
-/*for very small screens or mobile devices */
-@media (max-width: 767px)  {
-  
-  .col-sx-12 {
-  	float: left;
-    width: 100%;
-  }
+@media (max-width: 767px) {
+#cr-tile, #singer-tile, #map-tile {
+	width: 350px;
+	margin: 0 auto 15px;
 }
+}
+#photo h4, #cultural h4{
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #43E9AA;
+}
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #041B2F;
+	border-top: 0;
+}
+.panel-footer p {
+	text-align: center;
+	font-size: 2em;
+	font-style: italic;
+	font-weight: bold;
+	color:#FC99EB;
+}
+.panel-footer div.row{
+	margin-bottom: 35px;
+}
+#photos, #culture {
+	line-height: 2;
+}
+#photos > span, #culture > span {
+	font-size: 1.3em;
+}
+
+#culture p {
+	color: #557c3e;
+	font-size: .8em;
+	line-height: 1.8;
+}
+#photos > span, #culture > span {
+	font-size: 1.3em;
+}
+
+#tour,#picnic,#abahon,#random,#freshers{
+	color:#0BD7D0;
+	font-size: 20px;
+}
+.category-tile{
+	position: relative;
+	border:2px solid #F8BBB6;
+	width:500px;
+	height: 500px;
+	margin: 0 auto 15px;
+}
+.category-tile span {
+	position: absolute;
+	bottom: 0;
+	right:0;
+	width:100%;
+	text-align: center;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #0EB4C5;
+	color:#34166A;
+	opacity:8;
+}
+.category-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#cr-category-tile + div {
+	margin-bottom: 50px;
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	.col-md-6{
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		float:left;
+		width: 100%
+	}
+}
+#mail span {
+	font-size: 2.1em;
+	color: #620E54;
+}
+
+
+
+
+
